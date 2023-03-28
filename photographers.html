@@ -27,8 +27,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About/Contact</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="blogindex.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href=".../../blogs/page 1/page1.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="gallery.html">SpotLight</a></li>
                     </ul>
                 </div>
@@ -48,17 +48,17 @@
             </div>
 
             <br>
-<div class="container">
-    <div class="row">
+<div class="container ">
+    <div class="row justify-content-center">
         <div class="col-lg-4">
             <div class="card p-0">
-                <div class="card-image">
+                <div class="card-image" >
                     <img src="assets/img/Partners/@antonyphoto-DSC_0231.jpg"
-                        alt="">
+                        alt=""  onclick="openModal();currentSlide(1)">
                 </div>
                 <div class="card-content d-flex flex-column align-items-center">
                     <h4 class="pt-2">Lakyn M Felix</h4>
-                    <h5>Web Designer / Developer <br>Photographer</h5>
+                    <h5>Web Designer|Developer <br>Photographer</h5>
 
                     <ul class="social-icons d-flex justify-content-center">
                         <li style="--i:1">
@@ -66,14 +66,16 @@
                                 <span class="fab fa-facebook"></span>
                             </a>
                         </li>
-                        <!-- <li style="--i:2">
-                            <a href="#">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-                        </li> -->
+                      
                         <li style="--i:3">
                             <a href="https://www.instagram.com/lakynmfphotography/">
                                 <span class="fab fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li style="--i:2">
+                            <a href="mailto:lakynmphotography@hotmail.com">
+                                 
+                                <span class="fa-regular fa-envelope" style="color: #ffffff;"></span>
                             </a>
                         </li>
                     </ul>
@@ -81,41 +83,12 @@
             </div>
         </div>
       
-        <div class="col-lg-4">
-            <div class="card p-0">
-                <div class="card-image">
-                    <img src="assets/img/Partners/@antonyphoto-A7402243-ARW.jpg"
-                        alt="">
-                </div>
-                <div class="card-content d-flex flex-column align-items-center">
-                    <h4 class="pt-2">Brandon Herbert</h4>
-                    <h5>Photographer<br>Videographer</h5>
-
-                    <ul class="social-icons d-flex justify-content-center">
-                        <!-- <li style="--i:1">
-                            <a href="#">
-                                <span class="fab fa-facebook"></span>
-                            </a>
-                        </li> -->
-                        <!-- <li style="--i:2">
-                            <a href="#">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-                        </li> -->
-                        <li style="--i:3">
-                            <a href="https://www.instagram.com/digi__clicks/">
-                                <span class="fab fa-instagram"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+     
         <div class="col-lg-4">
             <div class="card p-0">
                 <div class="card-image">
                     <img src="assets/img/Partners/@antonyphoto-DSC_2306.jpg"
-                                alt="">
+                                alt="" onclick="openModal1();currentSlide(2)" >
                 </div>
                 <div class="card-content d-flex flex-column align-items-center">
                     <h4 class="pt-2">Antony Doniewski</h4>
@@ -127,14 +100,16 @@
                                 <span class="fab fa-facebook"></span>
                             </a>
                         </li>
-                        <!-- <li style="--i:2">
-                            <a href="#">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-                        </li> -->
+                       
                         <li style="--i:3">
                             <a href="https://www.instagram.com/antonyphoto/">
                                 <span class="fab fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li style="--i:2">
+                            <a href="mailto:antony.eyrk@gmail.com">
+                                 
+                                <span class="fa-regular fa-envelope" style="color: #ffffff;"></span>
                             </a>
                         </li>
                     </ul>
@@ -143,12 +118,46 @@
         </div>
     </div>
     
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="slides">
+        <div class="slide"><img src="assets/img/gallery/Lakyn/artists/DSC_2397-NEF.jpg" alt="Artists"  ><a href="gallery.html"><h3 class="photo">ARTISTS</a></h3></div>
+        <div class="slide"><img src="assets/img/gallery/Lakyn/ravers/DSC_2114-NEF.jpg" alt="Ravers"><a href="gallery.html"><h3 class="photo">RAVERS</h3></a></div>
+        <div class="slide"><img src="assets/img/gallery/Lakyn/shows/DSC_3228-NEF.jpg" alt="Shows" ><a href="gallery.html"><h3 class="photo">SHOWS</h3></a></div>
+        <div class="slide"><img src="assets/img/gallery/Lakyn/ravers/DSC_4534-NEF.jpg" alt="Designs"><a href="gallery.html"><h3 class="photo">MAKING OF RAVEABOUTIT</h3></a></div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+
+  
+<!-- The Modal1 -->
+<div id="myModal1" class="modal1">
+    <span class="close" onclick="closeModal1()">&times;</span>
+    <div class="modal1-content">
+      <div class="slides">
+        <div class="slide1"><img src="assets/img/gallery/Antony/@antonyphoto-A " alt="ARTISTS"></div>
+        <div class="slide1"><img src="assets/img/gallery/Antony/@antonyphoto-A7406874-ARW.jpg" alt="RAVERS"></div>
+        <div class="slide1"><img src="assets/img/gallery/Antony/@antonyphoto-A7407163-ARW.jpg" alt="SHOWS"></div>
+        <div class="slide1"><img src="assets/img/gallery/Lakyn/shows/DSC_3228-NEF.jpg" alt="VIDEOS" > </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+
+
 </div>
+
 <br>
 <br>
 
  <!-- Footer-->
- <footer class="border-top">
+ <!-- <footer class="border-top">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
@@ -182,9 +191,93 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Get the modal element
+var modal = document.getElementById("myModal");
+// Get the modal element
+var modal1 = document.getElementById("myModal1");
+
+// Get the close button element
+var closeButton = document.getElementsByClassName("close")[0];
+
+// Get the slide index
+var slideIndex = 1;
+
+// Display the current slide
+function showSlide(n) {
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Move to the next slide
+function nextSlide() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+// Move to the previous slide
+function prevSlide() {
+  slideIndex--;
+  showSlide(slideIndex);
+}
+
+// Open the modal
+function openModal() {
+  modal.style.display = "block";
+  showSlide(slideIndex);
+}
+
+// Close the modal
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// Event listener
+document.addEventListener("click", function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+  if (event.target.classList.contains("close")) {
+    closeModal();
+  }
+  if (event.target.classList.contains("prev")) {
+    prevSlide();
+  }
+  if (event.target.classList.contains("next")) {
+    nextSlide();
+  }
+});
+
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode == 27) {
+    closeModal();
+  }
+  if (event.keyCode == 37) {
+    prevSlide();
+  }
+  if (event.keyCode == 39) {
+    nextSlide();
+  }
+});
+
+
+</script>
+
+    
+    
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 </body>
