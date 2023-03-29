@@ -109,8 +109,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
+
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  color: #9b59b6;
+word-spacing: 3px;
+  
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -11571,10 +11575,11 @@ body {
 
 
 .card .card-content .social-icons li {
-    margin: 10px;
+    margin: 8px;
     transition: 0.5s;
     transition-delay: calc(0.15s * var(--i));
     transform: translateY(50px);
+    padding-bottom: 20px;
 }
 
 
