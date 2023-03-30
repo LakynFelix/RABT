@@ -103,6 +103,8 @@ function showSlides(n) {
               setTimeout(showSlides, 2000); // Change image every 2 seconds
             }
             
+       
+            
 
 /**
 * Template Name: iPortfolio - v1.5.1
@@ -297,3 +299,156 @@ function showSlides(n) {
   });
 
 })(jQuery);
+
+
+
+// Get the modal element
+var modal1 = document.getElementById("myModal");
+
+// Get the close button element
+var closeButton = document.getElementsByClassName("close")[0];
+
+// Get the slide index
+var slideIndex = 1;
+
+// Display the current slide
+function showSlide(n) {
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Move to the next slide
+function nextSlide() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+// Move to the previous slide
+function prevSlide() {
+  slideIndex--;
+  showSlide(slideIndex);
+}
+
+// Open the modal
+function openModal() {
+  modal1.style.display = "block";
+  showSlide(slideIndex);
+}
+
+// Close the modal
+function closeModal() {
+  modal1.style.display = "none";
+}
+
+// Event listener
+document.addEventListener("click", function(event) {
+  if (event.target == modal1) {
+    closeModal();
+  }
+  if (event.target.classList.contains("close")) {
+    closeModal();
+  }
+  if (event.target.classList.contains("prev")) {
+    prevSlide();
+  }
+  if (event.target.classList.contains("next")) {
+    nextSlide();
+  }
+});
+
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode == 27) {
+    closeModal();
+  }
+  if (event.keyCode == 37) {
+    prevSlide();
+  }
+  if (event.keyCode == 39) {
+    nextSlide();
+  }
+});
+
+
+// Get the modal element
+var modal1 = document.getElementById("myModal");
+
+// Get the close button element
+var closeButton = document.getElementsByClassName("close")[0];
+
+// Get the slide index
+var slideIndex = 1;
+
+// Display the current slide
+function showSlide(n) {
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Move to the next slide
+function nextSlide() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+// Move to the previous slide
+function prevSlide() {
+  slideIndex--;
+  showSlide(slideIndex);
+}
+
+// Open the modal
+function openModal() {
+  modal1.style.display = "block";
+  showSlide(slideIndex);
+}
+
+// Close the modal
+function closeModal() {
+  modal1.style.display = "none";
+}
+
+// Event listener
+document.addEventListener("click", function(event) {
+  if (event.target == modal1) {
+    closeModal();
+  }
+  if (event.target.classList.contains("close")) {
+    closeModal();
+  }
+  if (event.target.classList.contains("prev")) {
+    prevSlide();
+  }
+  if (event.target.classList.contains("next")) {
+    nextSlide();
+  }
+});
+
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode == 27) {
+    closeModal();
+  }
+  if (event.keyCode == 37) {
+    prevSlide();
+  }
+  if (event.keyCode == 39) {
+    nextSlide();
+  }
+});
