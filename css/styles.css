@@ -4401,7 +4401,7 @@ textarea.form-control-lg {
   color: #8e44ad;
 }
 .navbar-light .navbar-toggler {
-  color: #8e44ad;
+  color: #fff;
   font-weight: 900;
   
 }
@@ -7096,6 +7096,7 @@ textarea.form-control-lg {
 
 .mb-4 {
   margin-bottom: 1.5rem !important;
+
 }
 
 .mb-5 {
@@ -11054,13 +11055,17 @@ blockquote {
   left: 0;
   right: 0;
   z-index: 1030;
-  border-bottom: 1px solid #dee2e6;
-  background-color: #fff;
+  background-color: #8d44ad9b;
+  border-bottom: 1px solid  #8d44ad9b;
+
+  border-bottom: 1px solid transparent;
+  background: transparent;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand {
   font-weight: 900;
   font-size: 40px;
+  color: #fff;
   
 }
 #mainNav .navbar-toggler {
@@ -11073,6 +11078,7 @@ blockquote {
   /* font-weight:900;
   font-weight: bolder;
   color:#8e44ad; */
+  color: #8d44ab;
 
 
 }
@@ -11081,7 +11087,7 @@ blockquote {
   font-weight: 900;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
-  color: #9b59b6;
+  color: #fff;
   
   
 }
