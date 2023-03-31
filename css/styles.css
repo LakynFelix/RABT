@@ -7485,7 +7485,6 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
@@ -11079,21 +11078,19 @@ blockquote {
   
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-  font-weight:900;
+  /* font-weight:900;
   font-weight: bolder;
-  color:#8e44ad;
+  color:#8e44ad; */
   color: #8d44ab;
 
 
 }
-
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
   font-size: 1.3rem;
   font-weight: 900;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
-  color: #fff;
-
+  color: #f012b0;
   
   
 }
@@ -11113,9 +11110,7 @@ blockquote {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
     color: #bb8fce;
-    
   }
-  
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11124,8 +11119,6 @@ blockquote {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    
-    
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
@@ -11241,7 +11234,6 @@ header.masthead .site-heading .h1 {
     font-size: 1.875rem;
   }
 }
-
 
 .section-heading {
   font-size: 2.25rem;
@@ -11389,7 +11381,6 @@ img {vertical-align: middle;}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  
   .prev, .next,.text {font-size: 9px}
 }
 
@@ -11479,6 +11470,7 @@ hr:not([size]) {
 
 }
 
+
 .blogs1 {
   padding: 6px;
 text-align: center;
@@ -11488,9 +11480,10 @@ text-align: center;
  text-transform: uppercase;
     background-color: #8d44ad9b;
     border-color: #8d44ad9b;
-    box-shadow: 10px 8px 5px #000;
-    
+    box-shadow: 10px 8px 5px #000; 
 }
+
+
 a.btn.btn-primary.text-uppercase {
   padding-right: 13px;
 }
@@ -11612,8 +11605,4 @@ h2.post-title {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
-}
-
-.py-4 {
-  background-color: rgb(141 68 173 / 56%);
 }
