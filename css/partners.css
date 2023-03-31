@@ -4420,7 +4420,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: #8d44ad9b;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
@@ -4448,7 +4448,7 @@ textarea.form-control-lg {
 .navbar-dark .navbar-text a,
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
-  color: #fff;
+  color: #8d44ad9b;
 }
 
 .card {
@@ -11073,7 +11073,7 @@ blockquote {
   font-weight: 800;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
-  color:#fff;
+  color:#8d44ad9b;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11090,7 +11090,7 @@ blockquote {
     color: #9b59b6;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-    color:  #fff;
+    color:  #8d44ad9b;
   
   }
 }
