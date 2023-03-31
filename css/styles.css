@@ -11097,14 +11097,14 @@ blockquote {
     border-bottom: 1px solid transparent;
     background: transparent;
   }
-  #mainNav .navbar-brand {
+  #mainNav .navbar-brand { 
     color: #fff;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
    color: #9b59b6;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    color: #6a367f;
+    color: #fff;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
     color: #bb8fce;
@@ -11130,13 +11130,13 @@ blockquote {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #8d44ad9b;;
+    color: #8d44ad9b;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #8d44ad9b;;
+    color: #8d44ad9b;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -11253,7 +11253,7 @@ header.masthead .site-heading .h1 {
 }
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
-  color: #8d44ad9b;;
+  color: #8d44ad9b;
 }
 .post-preview > a > .post-title {
   font-size: 1.875rem;

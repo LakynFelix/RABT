@@ -11053,7 +11053,7 @@ blockquote {
   left: 0;
   right: 0;
   z-index: 1030;
-  color: #9b59b6;
+  color: #fff;
 
   border-bottom: 1px solid  #8d44ad9b;
   background-color:  #8d44ad9b;
@@ -11069,7 +11069,7 @@ blockquote {
   text-transform: uppercase;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
@@ -11087,7 +11087,7 @@ blockquote {
     color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    color: #9b59b6;
+    color: #fff;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
     color:  #8d44ad9b;
@@ -11434,7 +11434,7 @@ body {
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 50px;
     
 }
 
@@ -11483,7 +11483,7 @@ body {
     width: 100%;
     transition: bottom .4s ease-in;
     box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
-    border: 4px solid  #0085A1;
+  
     border-radius: 13px 13px 15px 15px;
     
 }
