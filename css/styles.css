@@ -7399,6 +7399,7 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+  color: #007891;
 }
 
 .text-decoration-none {
@@ -11608,3 +11609,4 @@ h2.post-title {
   opacity: 1;
   bottom: 0;
 }
+
