@@ -112,7 +112,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
-  color: #9b59b6;
+  color: #8e0dc2e0;
 word-spacing: 3px;
   
 }
