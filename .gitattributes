@@ -1,0 +1,1 @@
+*.psd,[[:space:]].png,[[:space:]].nef filter=lfs diff=lfs merge=lfs -text

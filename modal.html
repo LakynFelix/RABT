@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stest.css">
+</head>
+<body>
+
+    
+
+
+<div class="gallery justify-content-center">
+  <img src="assets/img/gallery/Lakyn/artists/DSC_2397-NEF.jpg" alt="Image 1" onclick="openModal();currentSlide(1)">
+ 
+  
+</div>
+
+<div class="gallery justify-content-center">
+  <img src="assets/img/gallery/Antony/@antonyphoto-A7406874-ARW.jpg" alt="Image 1" onclick="openModal1();currentSlide(1)">
+ 
+  
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="slides">
+      <div class="slide"><img src="assets/img/gallery/Lakyn/ravers/DSC_2314-NEF.jpg" alt="Image 1" ></div>
+      <div class="slide"><img src="assets/img/gallery/Lakyn/ravers/DSC_2314-NEF.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="assets/img/gallery/Lakyn/ravers/DSC_2111-NEF.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="assets/img/gallery/Lakyn/ravers/DSC_4534-NEF.jpg" alt="Image 4"></div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+
+
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+  <span class="close" onclick="closeModal1()">&times;</span>
+  <div class="modal-content">
+    <div class="slides">
+      <div class="slide1"><img src="assets/img/gallery/Brandon/halloween3.jpeg" alt="Image 1" ></div>
+      <div class="slide1"><img src="assets/img/gallery/Antony/@antonyphoto-A7406874-ARW.jpg" alt="Image 2"></div>
+     
+    </div>
+    <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+    <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+  </div>
+</div>
+    
+</body>
+<!-- <script src="test.js"></script> -->
+ <script>
+
+// Get the modal element
+var modal = document.getElementById("myModal");
+
+// Get the close button element
+var closeButton = document.getElementsByClassName("close")[0];
+
+// Get the slide index
+var slideIndex = 1;
+
+// Display the current slide
+function showSlide(n) {
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Move to the next slide
+function nextSlide() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+// Move to the previous slide
+function prevSlide() {
+  slideIndex--;
+  showSlide(slideIndex);
+}
+
+// Open the modal
+function openModal() {
+  modal.style.display = "block";
+  showSlide(slideIndex);
+}
+
+// Close the modal
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// Event listener
+document.addEventListener("click", function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+  if (event.target.classList.contains("close")) {
+    closeModal();
+  }
+  if (event.target.classList.contains("prev")) {
+    prevSlide();
+  }
+  if (event.target.classList.contains("next")) {
+    nextSlide();
+  }
+});
+
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode == 27) {
+    closeModal();
+  }
+  if (event.keyCode == 37) {
+    prevSlide();
+  }
+  if (event.keyCode == 39) {
+    nextSlide();
+  }
+});
+
+// MODAL //
+// Get the modal element
+var modal = document.getElementById("myModal1");
+
+// Get the close button element
+var closeButton = document.getElementsByClassName("close1")[0];
+
+// Get the slide index
+var slideIndex = 1;
+
+// Display the current slide
+function showSlide1(n) {
+  var slides = document.getElementsByClassName("slide1");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Move to the next slide
+function nextSlide1() {
+  slideIndex++;
+  showSlide(slideIndex);
+}
+
+// Move to the previous slide
+function prevSlide1() {
+  slideIndex--;
+  showSlide(slideIndex);
+}
+
+// Open the modal
+function openModal1() {
+  modal.style.display = "block";
+  showSlide(slideIndex);
+}
+
+// Close the modal
+function closeModal1() {
+  modal.style.display = "none";
+}
+
+// Event listener
+document.addEventListener("click", function(event) {
+  if (event.target == modal) {
+    closeModal1();
+  }
+  if (event.target.classList.contains("close1")) {
+    closeModal1();
+  }
+  if (event.target.classList.contains("prev1")) {
+    prevSlide1();
+  }
+  if (event.target.classList.contains("next1")) {
+    nextSlide1();
+  }
+});
+
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode == 27) {
+    closeModal1();
+  }
+  if (event.keyCode == 37) {
+    prevSlide1();
+  }
+  if (event.keyCode == 39) {
+    nextSlide1();
+  }
+});
+
+
+
+ </script>
+
+
+</html>
+
